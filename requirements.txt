@@ -1,0 +1,13 @@
+Django==4.2.3
+djangorestframework==3.14.0
+# Add any additional dependencies here
+
+# For development and testing
+pytest==7.4.2
+pytest-django==5.2.0
+
+# For database support (e.g., PostgreSQL)
+# psycopg2-binary==2.9.6
+
+# For handling environment variables
+python-dotenv==1.0.0

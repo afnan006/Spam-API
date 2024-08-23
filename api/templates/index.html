@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Checker</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Spam Checker API</h1>
+
+    <!-- Registration Form -->
+    <h2>Register</h2>
+    <form id="register-form" autocomplete="off">
+        <input type="text" id="register-username" placeholder="Username" required autocomplete="off">
+        <input type="text" id="register-phone" placeholder="Phone Number" required autocomplete="off">
+        <input type="email" id="register-email" placeholder="Email" autocomplete="off">
+        <input type="password" id="register-password" placeholder="Password" required autocomplete="off">
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form id="login-form" autocomplete="off">
+        <input type="text" id="login-phone" placeholder="Phone Number" required autocomplete="off">
+        <input type="password" id="login-password" placeholder="Password" required autocomplete="off">
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Search Form -->
+    <h2>Search Contacts</h2>
+    <form id="search-form" autocomplete="off">
+        <input type="text" id="search-query" placeholder="Enter name or phone number" required autocomplete="off">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Spam Report Form -->
+    <h2>Report Spam</h2>
+    <form id="report-spam-form" autocomplete="off">
+        <input type="text" id="report-phone" placeholder="Phone Number" required autocomplete="off">
+        <button type="submit">Report Spam</button>
+    </form>
+
+    <!-- Results Section -->
+    <h2>Search Results</h2>
+    <ul id="search-results"></ul>
+<h2>Add Contact</h2>
+<form id="add-contact-form">
+    <label for="contact-name">Name:</label>
+    <input type="text" id="contact-name" name="name" required>
+    <label for="contact-phone-number">Phone Number:</label>
+    <input type="text" id="contact-phone-number" name="phone_number" required>
+    <label for="contact-is-spam">Is Spam:</label>
+    <input type="checkbox" id="contact-is-spam" name="is_spam">
+    <button type="submit">Add Contact</button>
+</form>
+    <!-- Pop-up Notification -->
+    <div id="popup" class="hidden"></div>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

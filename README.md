@@ -165,8 +165,8 @@ else:
 
 About Me
 Afnan Ahmed
-
 Email: afnan006cs@gmail.com
 Phone: +91 82966 35241
 Location: Jayanagar, Bengaluru
+
 I am a recent graduate with a Bachelor's degree in Computer Science and Engineering. My academic background, combined with hands-on experience in full-stack development, has equipped me with the skills to design and develop efficient software solutions. I am passionate about coding, problem-solving, and continuously learning new technologies to enhance my capabilities in the software development field.

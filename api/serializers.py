@@ -25,7 +25,7 @@ class ContactSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Contact
-        fields = ['user', 'name', 'phone_number', 'is_spam']
+        fields = ['name', 'phone_number', 'is_spam']
 
     def get_is_spam(self, obj):
         # Determine if the contact is marked as spam
